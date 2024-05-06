@@ -1,0 +1,75 @@
+#content {
+    background-color: #66665d;
+    width: 100%;
+    padding: 80px 0px 40px 0px;
+    /* azért adom meg, hogy a jelentkezzenbe doboz abszolút és hátulról ide legyen viszonyítva */
+    position: relative;
+}
+
+#galeria {
+    /* azért adtam meg, hogy majd a megfelelő címsort legfelülre írhassam, ami amúgy a kód alapján leghátra kerülne */
+    width: 900px;
+    border: #a38e66 5px solid;
+    border-radius: 40px;
+    /*  0px alul és felül de jobbról és balról automatikus, tehát így helyezi középre a galeria dobozt, mert
+    jobbról és balról egyforma lesz a margó*/
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0px auto 40px auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* a kép doboz tartalmazza a képet és alatta a kép nevét és dátumát */
+.kep {
+    margin: 0px;
+    padding: 20px 0px 0px 20px;
+    /* ezzel érem el, hogy a kép dobozok egymás mellé kerüljenek */
+    display: inline-block;
+}
+
+.kep img {
+    width: 270px;
+}
+
+p,
+h1 {
+    color: #a38e66;
+}
+
+/* ----------------------------------HA NINCS BEJELENTKEZVE AZT A RÉSZT FORMÁZZA--------------------------- */
+
+#jelentkezzenbe,
+#jelentkezzenbe p {
+    width: 100%;
+    /* ezzel csúsztatom tetejére innen hátrulól, párja az relatív pozíciós, ahhoz viszonyítva megy fel */
+    position: absolute;
+    color: rgb(233, 118, 118);
+    font-weight: bolder;
+    top: 10px;
+    /* szöveg a dobozba középre legyen rendezve */
+    text-align: center;
+}
+
+/* -----------------------------------HA BE VAN JELENTKEZVE, A LÁTHATÓ FORM-OT FORMÁZZA--------------------- */
+/* inline módszerrel ott a galeria.tpl.php-ban */
+#kepfeltoltodoboz h1 {
+    padding-top: 30px;
+}
+
+#kepfeltoltodoboz #urlap {
+    margin: 0px 50px;
+    padding: 10px 10px;
+    color: #a38e66;
+    font-size: 17;
+    border: #a38e66 2px solid;
+    border-radius: 15px;
+}
+
+/* ezzel érem el, hogy a címkék szépen hagyjanak ki helyet a gomb mellett, ehhez kell az inline-block */
+#kepfeltoltodoboz #urlap label {
+    display: inline-block;
+    width: 80px;
+}
