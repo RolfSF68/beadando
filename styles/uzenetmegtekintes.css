@@ -1,0 +1,19 @@
+#fodoboz {
+    width: 100%;
+    height: 200px;
+    background-color: #66665d;
+}
+
+#fodoboz .hiba {
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+    color: rgb(233, 118, 118);
+    font-weight: bolder;
+}
+
+#fodoboz .kiiratas {
+    color: #a58f67;
+    margin: 0px;
+    padding:10px 0px 10px 10px;
+}
