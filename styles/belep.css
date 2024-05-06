@@ -1,0 +1,22 @@
+#content {
+    background-color: #66665d;
+    color: #a58f67;
+    height: 200px;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    text-align: center;
+}
+
+#ujra {
+    font-weight: 600;
+    color: #bd9c9c;
+}

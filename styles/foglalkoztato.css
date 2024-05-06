@@ -1,0 +1,29 @@
+body {
+    background-color: #66665d;
+    font-family: "Titillium Web", arial, sans-serif;
+    color: #a58f67;
+}
+
+#foglalkoztatoDoboz {
+    width: auto;
+    height: 750px;
+}
+
+#foglalkoztatoDoboz2 {
+    width: 1000px;
+    margin: 0px 174px;
+    padding: 0px 32px;
+    line-height: 1.6;
+}
+
+#strongId {
+    padding: 41px 0px;
+    margin: 0px;
+    width: 930px;
+}
+
+.bekezdes {
+    padding: 0px;
+    margin: 0px 0px 28px 0px;
+    width: 930px;
+}
