@@ -1,11 +1,67 @@
-<h2>Köszöntés</h2>
-<img src="./images/arc.jpg">
-<h3>Mi a Lorem Ipsum?</h3>
-<p>A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. A Lorem Ipsum az 1500-as évek óta standard szövegrészletként szolgált az iparban; mikor egy ismeretlen nyomdász összeállította a betûkészletét és egy példa-könyvet vagy szöveget nyomott papírra, ezt használta. Nem csak 5 évszázadot élt túl, de az elektronikus betûkészleteknél is változatlanul megmaradt. Az 1960-as években népszerûsítették a Lorem Ipsum részleteket magukbafoglaló Letraset lapokkal, és legutóbb softwarekkel mint például az Aldus Pagemaker.</p>
-<h3>Honnan származik?</h3>
-<p>A hiedelemmel ellentétben a Lorem Ipsum nem véletlenszerû szöveg. Gyökerei egy Kr. E. 45-ös latin irodalmi klasszikushoz nyúlnak. Richarrd McClintock a virginiai Hampden-Sydney egyetem professzora kikereste az ismeretlenebb latin szavak közül az egyiket (consectetur) egy Lorem Ipsum részletbõl, és a klasszikus irodalmat átkutatva vitathatatlan forrást talált. A Lorem Ipsum az 1.10.32 és 1.10.33-as de Finibus Bonoruem et Malorum részleteibõl származik (A Jó és Rossz határai - Cicero), Kr. E. 45-bõl. A könyv az etika elméletét tanulmányozza, ami nagyon népszerû volt a reneszánsz korban. A Lorem Ipsum elsõ sora, Lorem ipsum dolor sit amet.. a 1.10.32-es bekezdésbõl származik.</p>
-<p>A Lorem Ipsum alaprészlete, amit az 1500-as évek óta használtak, az érdeklõdõk kedvéért lent újra megtekinthetõ. Az 1.10.32 és 1.10.33-as bekezdéseket szintén eredeti formájukban reprodukálták a hozzá tartozó angol változattal az 1914-es fordításból H. Rackhamtól.</p>
-<h3>Miért használjuk?</h3>
-<p>Ez egy régóta elfogadott tény, miszerint egy olvasót zavarja az olvasható szöveg miközben a szöveg elrendezését nézi. A Lorem Ipsum használatának lényege, hogy többé-kevésbé rendezettebb betûket tartalmaz, ellentétben a Tartalom helye, Tartalom helye-féle megoldással. Sok desktop szerkesztõ és weboldal szerkesztõ használja a Lorem Ipsum-ot mint alapbeállítású szövegmodellt, és egy keresés a lorem ipsum-ra sok félkész weboldalt fog eredményezni.</p>
-<h3>Honnan szerezhető be?</h3>
-<p>A Lorem Ipsum részleteinek sok változata elérhetõ, de a legtöbbet megváltoztatták egy kis humorral és véletlenszerûen kiválasztott szavakkal, amik kicsit sem teszik értelmessé. Ha használni készülsz a Lorem Ipsumot, biztosnak kell lenned abban, hogy semmi kínos sincs elrejtve a szöveg közepén. Az összes internetes Lorem Ipsum készítõ igyekszik elõre beállított részleteket ismételni a szükséges mennyiségben, ezzel téve az internet egyetlen igazi Lorem Ipsum generátorává ezt az oldalt. Az oldal körülbelül 200 latin szót használ, egy maroknyi modell-mondatszerkezettel így téve a Lorem Ipsumot elfogadhatóvá. Továbbá az elkészült Lorem Ipsum humortól, ismétlõdéstõl vagy értelmetlen szavaktól mentes.</p>
+<div id="wrapper">
+    <div id="dobozFelso">
+        <div id="dobozFelso0">
+            <div id="dobozFelso1">
+                <h3>Kedves Látogató!</h3>
+                <p>Kevés embert ér az a megtiszteltetés, mint engem, hogy életében egy alapítványt nevezzenek el róla. Pályámat,
+                    az áldozatokkal teli úton, óriási kihívások, megpróbáltatások, sikerek, kudarcok és örömök kísérték, mire megvalósult életművem.</p>
+                <p>Ajánlom szíves figyelmükbe Alapítványunkat, ismerje meg tevékenységünket, támogassa célkitűzéseinket! Külön figyelmükbe ajánlom az
+                    Alapítványunk által fenntartott Otthon szolgálatát, szolgáltatását.</p>
+                <p>Tisztelettel: Hornyák Lászlóné</p>
+            </div>
+            <img id="arckep" src="./images/arckep.jpg" alt="arckep">
+        </div>
+    </div>
+
+    <div id="dobozAlso">
+        <div id="dobozAlso1">
+            <h4>Segítsen, hogy mi is segíthessünk</h4>
+            <p id="hornyak">HORNYÁK ALAPTVÁNY <br> 1151 Budapest, Gubó utca 8. <br> ADÓSZÁM: 18000294-1-42</p>
+            <p>Alapítványunk 1992-ben alakult azzal a céllal, hogy segítse az értelmi fogyatékos és a vak enyhe és középfokban halmozottan sérült
+                személyek életét. Az Alapítvány által fenntartott, modell értékű Otthonában jelenleg 26 fogyatékkal élő fiatal felnőtt ellátására
+                van lehetőség, ahol jelenleg 2 szabad férőhellyel rendelkezünk. Az Alapítvány biztonságos otthont, munkát, egészségmegőrző-fejlesztő
+                terápiát és hasznos szabadidős programot biztosít. Fellegvár Támogatott Lakhatásunkban jelenleg 2 szabad hely áll az ellátást
+                igénybevevők részére. Szeretnénk környezetünk, önkénteseink, támogatóink, gyakornokaink, iskolai közösségi szolgálatot végző
+                diákok révén „érzékennyé tenni” az egészségesek társadalmát a fogyatékkal élők világára, valamint biztosítani Alapítványunk
+                hosszú távú működését, hogy fiataljaink minél teljesebb életet élhessenek.
+                Idei évben ismét lehetőség nyílik adójuk 1 %-ával támogatni Alapítványunkat.<br>
+                Köszönjük szépen.</p>
+        </div>
+
+        <img id="mindazokKep" src="./images/mindazok.jpg" alt="mindazokKep">
+        <div id="dobozAlso2">
+            <h4>Legyél a munkatársunk</h4>
+            <p> Megváltozott munkaképességű munkatársakat keresünk:</p>
+            <a href="https://hornyakalap.hu/karbantarto/">Karbantartó</a>
+            <p id="támogatóink">Támogatóink <br> </p>
+            <a rel="nofollow noopener noreferrer" href="https://eta-szov.hu" data-raofz="16" role="link">Alapítványunk az ÉTA Országos Szövetség Tagszervezete</a>
+            <br>
+            <a rel="nofollow noopener noreferrer" href="https://www.magnetbank.hu/" data-raofz="16" role="link">MagNet Bank</a>
+        </div>
+        <div id="dobozAlso3">
+            <h4>Itt vagyunk elérhetőek</h4>
+            <p>Hornyák alapítvány</p>
+            <a href="https://goo.gl/maps/FEbcXy4coXs" rel="noopener noreferrer" data-raofz="16" role="link">1151&nbsp;Budapest,<br>&nbsp;Gubó utca 8.</a> <br>
+            <!-- https://google-map-generator.com/ ezzel tudtam helyesen legeneráltatni -->
+            <iframe src="https://maps.google.com/maps?q=horny%C3%A1k%20alap%C3%ADtv%C3%A1ny&t=&z=13&ie=UTF8&iwloc=&output=embed" width="180" height="150" frameborder="0" allowfullscreen></iframe>
+            <br>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/hornyakalap/" data-raofz="16" role="link">Facebook</a>
+                </li>
+                <li id="email">
+                    <a href="mailto:alap@hornyakalap.hu" data-raofz="16" role="link">Email</a>
+                </li>
+            </ul>
+            <br>
+        </div>
+    </div>
+</div>
+<div id="vidik">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Enzva3d3uuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </iframe>
+    <video width="400" height="300" controls style>
+        <source src="vid.mp4" type="video/mp4">
+    </video>
+
+</div>

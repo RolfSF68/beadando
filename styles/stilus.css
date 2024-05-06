@@ -1,70 +1,320 @@
-header {
-    border-radius: 10px;
-    background-color: yellow;
-    padding: 10px;
-    margin: 10px;
-}
+/* fontosságok
+Amennyiben beállítom pl az aside-ban valamit, a tagjaira nem értendő, hiszen az aside-nek állítottam be, így
+megy az öröklődés.
+Másik, hogy érdemes minél részletesebben megadni a hivatkozásokat */
 
-header img {
-    float: left;
-    margin: 20px 10px 0px 10px;
-}
-
-div#wrapper {
-    margin: 10px;
-}
-
-aside {
-    display: table-cell;
-    vertical-align: top;
-}
-
-nav {
-    margin: 0px 10px 0px 0px;
-    top: 0px;
-    border-radius: 10px;
-    background-color: #FF6600;
-}
-
-nav ul {
-    list-style-type: none;
+/* így érem el, hogy a fejléc a szélére kihúzódjon oldalt és felül, enélkül a body paddingje és marginja eltartaná picit 
+beállítom az egész oldalra vonatkozóan a betűtípust*/
+body {
     margin: 0px;
-    padding: 15px 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: "Titillium Web", arial, sans-serif;
 }
 
-nav ul li {
-    padding: 0px 15px;;
+/* ---------------------------------------------FEJLÉC FORMÁZÁSA------------------------------------------- */
+
+/* Beállítom a header háttérszínét és a menü és a header közötti szürke sávot a paddinggel*/
+header {
+    background-color: #66665d;
+    padding-bottom: 10px;
 }
 
-nav ul li.active {
-    border-right: 5px solid blue;
+/* beállítom a kép méretét, majd a bal paddinget, ami persze tolja jobbra az img1 melletti img2-es képet is*/
+header #fejlecImg1 {
+    width: 234px;
+    height: 234px;
+    padding-left: 160px;
 }
 
-nav ul a {
-    text-decoration: none;
-    color: blue;
+/* beállítom a másik kép méretét és az img1-től eltolom jobbra img2-t */
+header #fejlecImg2 {
+    width: 827px;
+    height: 223px;
+    padding-left: 90px;
 }
 
-div#content {
-    display: table-cell;
+/* ha bejelentkezem, akkor kiírja a dolgokat, és ezt formázom vele */
+#bejelentkezve {
     width: 100%;
-    border-radius: 10px;
-    background-color: #99FFCC;
-    padding: 15px;
+    font-weight: 600;
+    color: #bd9c9c;
+    padding: 10px 0px 0px 20px;
 }
 
-div#content img{
-    float: right;
-    width: 20em;
-    height: auto;
-    margin: 0 0 15px 15px;
-    padding: 3px;
-    border: 3px solid blue;
+/* ---------------------------------------MENÜ FORMÁZÁSA---------------------------------------------- */
+
+/* most beállítom az ul magasságát, és paddinggel eltolom balról 100-al, színátmenetes hátteret adok neki */
+aside nav ul {
+    height: 64px;
+    padding: 10px 0px 0px 100px;
+    margin: 0px;
+    background-image: linear-gradient(#53514b, #312e27);
 }
 
+/* display inline-al beállítom, így egymás mellé kerülnek a listaelemek */
+aside nav ul li {
+    /* padding-left: 20px; */
+    display: inline;
+}
+
+/* így kell megadni, aside-ra a text-decoration:none nem jó, mert nem örökli meg az "a", csak az asidre-ra értendő akkor */
+aside nav ul li a {
+    text-decoration: none;
+    color: #a58f67;
+    margin-left: 10px;
+}
+
+/* ezzel érem el, hogy az aktív menü felett fixen legyen a border, ez az index.tpl.php-ban meg van írva php-ban
+hogy magától pakolgassa az activ osztályba az elemeket, mindig mikor meghívom valamely menüpontot
+akkor pakolgatja */
+.active {
+    border-top: #a58f67 2px solid;
+}
+
+/* menü felett a kurzor, akkor legyen borderja, de semmilyen más linkre ne legyen ez igaz, 
+még más menüben sem */
+aside a:hover {
+    border-top: #a58f67 2px solid;
+}
+
+/* ----------------------------------TARTALOM FELSŐ DOBOZÁT FORMÁZOM----------------------------------- */
+
+/* ez a doboz ami tartalmazzta a dobozfelso0-t, amiben meg a dobozfelso1 és arckep kepet */
+/* megadom a szélességét, hogy teljesen kitöltse a szélességet, magasságát belövöm, ne legyen margója, paddingje, és
+beállítom a színét */
+#dobozFelso {
+    width: 100%;
+    height: 420px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #66665d;
+}
+
+/* ebben van a dobozFelso1 és az arckep, beállítom a szélességét és magasságát, ne legyen margója, 
+paddinget állítok */
+#dobozFelso0 {
+    width: 936px;
+    height: 340px;
+    margin: 0px;
+    padding: 41px 0px 0px 250px;
+}
+
+/* ebben van az arckép melletti szöveg, beállítom a szélességét, magasságát, paddinget és a padding
+jobbról 30-at eltart a kép miatt, margója ne legyen, a kép jobbról fussa körbe */
+#dobozFelso1 {
+    width: 558px;
+    height: 340px;
+    padding: 0px 60px 0px 0px;
+    margin: 0px;
+    float: left;
+}
+
+/* beállítom a kép szélességét és magasságát, margóját és paddingját*/
+#arckep {
+    width: 270px;
+    height: 340px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* itt állítom be a dobozFelso1 szövegét */
+#wrapper #dobozFelso #dobozFelso0 #dobozFelso1 p,
+#wrapper #dobozFelso #dobozFelso0 #dobozFelso1 h3 {
+    margin: 0px 0px 20px 0px;
+    color: #a58f67;
+    line-height: 30px;
+}
+
+/* --------------------------------TARTALOM ALSÓ DOBOZÁT FORMÁZOM-------------------------------------------- */
+
+#mindazokKep {
+    width: 150px;
+}
+
+/* #cleaffix {
+    clear: both;
+} */
+
+/* nagydoboz szélét kitolom teljesen, magasságát beállítom, margó, padding, border ne legyen és a háttérszínt*/
+#dobozAlso {
+    width: 100%;
+    height: 650px;
+    margin: 0px;
+    padding: 40px 0px 30px 0px;
+    border: 0px;
+    background-color: #626259;
+}
+
+/* így állítom be, hogy mindenhol, amit a dobozAlso tartalmaz, 16-os legyen a mérete és 25-ös sorköz */
+#dobozAlso * {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+#dobozAlso #dobozAlso1 {
+    width: 420px;
+    height: 650px;
+    float: left;
+    padding: 0px 16px 0px 16px;
+    margin-left: 20px;
+}
+
+#dobozAlso #dobozAlso1 h4,
+#dobozAlso #dobozAlso1 p {
+    margin: 0px 0px 20px 0px;
+    color: white;
+}
+
+#dobozAlso #dobozAlso1 h4 {
+    text-transform: uppercase;
+}
+
+#dobozAlso #dobozAlso1 #hornyak {
+    text-align: center;
+}
+
+#mindazokKep {
+    width: 407px;
+    height: 343px;
+    float: left;
+    padding: 0px 16px 0px 16px;
+}
+
+#dobozAlso2 {
+    width: 180px;
+    height: 650px;
+    float: left;
+    padding: 0px 16px 0px 16px;
+}
+
+#dobozAlso2 h4 {
+    margin: 0px 0px 20px 0px;
+    color: white;
+}
+
+#dobozAlso2 a {
+    text-decoration: none;
+}
+
+#dobozAlso2 p {
+    color: white;
+}
+
+/* ez egy id-s p tag, amivel elérem, hogy előtte és utána a linkek 20-al távol maradjanak */
+#dobozAlso2 #támogatóink {
+    margin: 20px 0px 20px 0px;
+}
+
+#dobozAlso3 {
+    width: 187px;
+    height: 650px;
+    float: left;
+    padding: 0px 0px 0px 20px;
+}
+
+#dobozAlso3 h4,
+#dobozAlso3 p,
+#dobozAlso3 a {
+    margin: 0px 0px 20px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+#dobozAlso3 iframe {
+    margin: 20px 0px 20px 0px;
+}
+
+/* ezekkel a lenti szenvedésekkel állítom be, hogy a facebook és email aláhúzva, úgy nézzek ki */
+#dobozAlso3 ul {
+    padding: 0px;
+}
+
+#dobozAlso3 ul li {
+    text-decoration: none;
+    list-style: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3b3d36;
+}
+
+#dobozAlso3 ul #email {
+    padding-top: 10px;
+}
+
+/* link színe más legyen */
+#dobozAlso3 a,
+#dobozAlso2 a {
+    color: #d4d4d2;
+}
+
+
+
+/* ---------------------------------------------------LÁBLÉC BEÁLLÍTÁSA--------------------------------------------------- */
+
+/* megadom a footer háttérszínét, szélességét, magasságát, paddingját */
 footer {
-    border-radius: 10px;
-    margin: 10px;
-    padding: 5px 20px;
-    background-color: #CC99FF;
+    background-color: #494949;
+    width: 100%;
+    height: 132px;
+    padding: 24px 0px;
+}
+
+/* footer szövegét megformázom */
+
+footer #doboz1 {
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding: 0px 0px 0px 200px;
+    float: left;
+}
+
+footer #doboz2 {
+    width: 613px;
+    padding-left: 530px;
+}
+
+footer #doboz2 p {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    width: 200px;
+    color: white;
+}
+
+footer #kepforras {
+    float: left;
+    width: 150px;
+    height: 49px;
+    margin: 0px 16px 0px 0px;
+    padding-top: 45px;
+}
+
+footer #kepforras2 {
+    float: left;
+    width: 100px;
+    height: 78px;
+    margin: 0px 16px 0px 0px;
+    padding-top: 15px;
+}
+
+footer #kepforras3 {
+    width: 300px;
+    height: 39px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 55px;
+}
+
+/* ---------------------------------------videok--------------------------------------------------------------- */
+#vidik {
+    background-color: #333029;
+    width: 100%;
+}
+
+#vidik iframe {
+    padding-left: 100px;
+}
+
+video {
+    padding-left: 200px;
 }
